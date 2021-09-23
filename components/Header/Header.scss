@@ -1,0 +1,69 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: white;
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 40px;
+      height: 100px;
+      width: 1367px;
+      color: #1b1b1b;
+    }
+    a {
+      text-decoration: none;
+      font-family: sans-serif;
+      color: grey;
+      font-weight: 500;
+      &:hover {
+        color: #2c2952;
+        font-weight: 600;
+      }
+    }
+    &__collections-nav {
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      .close-bar {
+        display: none;
+      }
+      a {
+        animation-name: slide-down;
+        animation-duration: 0.6s;
+        animation-timing-function: ease-in-out;
+        animation-delay: -0.6;
+        padding: 25px 25px 20px;
+        font-size: 1rem;
+      }
+      .email-btn {
+        color: #49b1f2;
+        cursor: pointer;
+        border: 1px solid #c8c8c8;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 6px 6px;
+        font-size: 14px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
+    &__logo {
+      a {
+        animation-name: slide-right;
+        animation-duration: 0.7s;
+        animation-timing-function: ease-in-out;
+        font-size: clamp(1.5rem, 0.8748rem + 1.318vw, 2rem);
+        font-family: "Oswald", sans-serif;
+        display: flex;
+        color: #2c2952;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+   
+}

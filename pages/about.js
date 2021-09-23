@@ -8,7 +8,9 @@ import Section3 from '../components/Section/Section3/Section3'
 export default function Home() {
   return (
     <MainLayout>
-     <Hero color="white" title="Learn.Do.Share.Connect." bG="https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height="100vh" />
+     <Hero color="white" title="The First Social Media Platform For Health" bG="https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" height="100vh">
+     Connect is short form video and photo sharing social media platform focused on fitness, nutrition and culture. 
+         </Hero>
      <Section2 color="black" height="100%" bG="https://images.pexels.com/photos/1112633/pexels-photo-1112633.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" title="Try New Workouts">
      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
      </Section2>
