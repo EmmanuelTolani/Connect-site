@@ -18,7 +18,7 @@
       color: grey;
       font-weight: 500;
       &:hover {
-        color: #2c2952;
+        color: #19a6f2;
         font-weight: 600;
       }
     }
@@ -40,19 +40,31 @@
         padding: 25px 25px 20px;
         font-size: 1rem;
       }
-      .email-btn {
-        color: #49b1f2;
+    }
+      &__button {
+        button{
+        background: #19a6f2;
+        color: white;
         cursor: pointer;
         border: 1px solid #c8c8c8;
         border-radius: 4px;
         cursor: pointer;
-        padding: 6px 6px;
+        padding: 8px 20px;
         font-size: 14px;
         margin-right: 5px;
         margin-left: 5px;
       }
     }
+   
     &__logo {
+      width: 140px;
+      height: 60px;
+      img{
+        height: 100%;
+        width:100%;
+        object-fit: contain;
+        cursor: pointer;
+      }
       a {
         animation-name: slide-right;
         animation-duration: 0.7s;

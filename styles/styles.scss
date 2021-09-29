@@ -1,5 +1,7 @@
 @use './reset';
 @use '../components/components';
+@use './about';
+@use './join-beta';
 
 body{
     background-color: #ffff;

@@ -8,7 +8,7 @@ export default function Header() {
         <div className="header__container">
           <div className="header__logo">
             <Link href="/">
-            <a>Connect</a>
+            <img src="../src/images/Connect-Logo.png" />
             </Link>
           </div>
           <ul className="header__collections-nav">
@@ -20,14 +20,14 @@ export default function Header() {
               </Link>
               </li>
               <li>
-              <Link href="/">
+              <Link href="/join-beta">
               <a>
                 Join Beta
               </a>
               </Link>
               </li>
               <li>
-              <Link href="/">
+              <Link href="/about">
               <a>
                 About
               </a>
