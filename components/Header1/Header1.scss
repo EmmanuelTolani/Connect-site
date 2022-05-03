@@ -1,0 +1,142 @@
+@use "../variables";
+.header1 {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px 10px 20px;
+    height: 100px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+      color: #124273;
+    }
+  }
+
+  &__collections-nav {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .close-bar {
+      display: none;
+    }
+    a {
+      padding: 25px 25px 20px;
+      font-size: 1rem;
+    }
+    li:hover {
+      .header1__collections-nav--dropdown {
+        display: block;
+      }
+    }
+  }
+
+  &__collections-nav--dropdown {
+    display: none;
+    position: absolute;
+    background-color: variables.$blue;
+    min-width: 100px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    li {
+      padding: 12px 16px;
+      border-radius: 8px;
+      a {
+        color: white;
+      }
+    }
+
+    li:hover {
+      overflow: hidden;
+    }
+  }
+  .active {
+    color: variables.$navy;
+  }
+  .mobile {
+    padding: 10px;
+    cursor: pointer;
+    .fa-solid {
+      color: white;
+      font-size: 2rem;
+    }
+  }
+  &__collections-nav-mobile {
+    z-index: 1000;
+    visibility: hidden;
+    display: none;
+    // position: relative;
+    width: 100%;
+    background-color: #69a7ea;
+    background-image: linear-gradient(109deg, #69a7ea 0%, #b27cf3 100%);
+    // top: 50px;
+    text-align: center;
+    height: 80vh;
+    li {
+      padding: 20px 0;
+      a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        &:hover {
+          color: variables.$navy;
+        }
+      }
+    }
+    &.show {
+      visibility: visible;
+      display: block;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .header1 {
+    &__collections-nav {
+      display: none;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 767px) {
+  .header1 {
+    &__collections-nav {
+      display: none;
+    }
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .header1 {
+    &__collections-nav {
+      display: flex;
+    }
+    .mobile {
+      display: none;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

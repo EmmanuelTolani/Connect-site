@@ -1,33 +1,77 @@
-import Head from 'next/head'
-import MainLayout from '../components/layouts/MainLayout'
-import Hero from '../components/Hero/Hero'
-import Section2 from '../components/Section/Section2/Section2'
-import Section1 from '../components/Section/Section1/Section1'
-import Section3 from '../components/Section/Section3/Section3'
+import Head from "next/head";
+import MainLayout from "../components/layouts/MainLayout";
+import Hero from "../components/Hero/Hero1/Hero-Header";
+import Footer from "../components/Footer/Footer";
+import Link from "next/dist/client/link";
 
 export default function Home() {
   return (
-    <MainLayout>
-     <Hero color="white" title="The First Social Media Platform For Health" bG="https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" height="100vh">
-     Connect is short form video and photo sharing social media platform focused on fitness, nutrition and culture. 
-         </Hero>
-     <section className="connect-section">
-       <h2 className="connect-section__title">Connect</h2>
-       <p className="connect-section__subtitle">Show your creativity</p>
-       <p className="connect-section__subtitle1">Share your creations and promote  your business</p>
-     </section>
-     <section className="create-section">
-       <h2 className="create-section__title">Create</h2>
-       <p className= "create-section__subtitle" >Show the world how you take care of your body and become a content creator</p>
-     </section>
-     <section className="explore-section">
-       <h2 className="explore-section__title">Explore</h2>
-       <p className='explore-section__subtitle'>Find new ideas, expand your horizons and test your limits</p>
-     </section>
-     <section className="new-section">
-       <h2 className="new-section__title">Always something new</h2>
-       <p className="new-section__subtitle">Follow accounts with simliar interest and view them on your feed.</p>
-     </section>
+    <MainLayout
+      title="Who We Are"
+      message="Our mission, the team, and our goals."
+    >
+      <div className="about">
+        <div className="container">
+          <div className="about__story">
+            <h1>Our Story</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div className="about__teams">
+            <h1>Our Team</h1>
+            <div className="about__team">
+              <div className="about__person">
+                <div className="about__img">
+                  <img src="https://variety.com/wp-content/uploads/2019/12/samuel_l_jackson_v3.png?w=853" />
+                </div>
+                <h4>John Doe</h4>
+                <p>Software Developer</p>
+              </div>
+              <div className="about__person">
+                <div className="about__img">
+                  <img src="https://images.ctfassets.net/6jnflt57iyzx/4puYKWJCkmftJpOukfCDuw/7c3bd5cd3d5a0baaff1c109efba15518/Jonathan_Mildenhall.png" />
+                </div>
+                <h4>Vanessa McDonald</h4>
+                <p>Software Developer</p>
+              </div>
+              <div className="about__person">
+                <div className="about__img">
+                  <img src="https://st0.dancf.com/static/02/202104271120-cc8c.png?x-oss-process=image/format,webp" />
+                </div>
+                <h4>Grayson Kelly</h4>
+                <p>Software Developer</p>
+              </div>
+            </div>
+          </div>
+          <div className="main-contact">
+            <div className="main-contact__title">
+              <h3>Join Us</h3>
+              <h1>Send Us A Message</h1>
+            </div>
+            <div className="main-contact__button">
+              <Link href="/about">
+                <button>Contact Us</button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </MainLayout>
-  )
+  );
 }

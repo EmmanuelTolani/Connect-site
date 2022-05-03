@@ -1,68 +1,69 @@
 @use "variables";
-.about {
+.updates {
   .container {
     height: auto;
     padding: 100px 0 0px;
   }
-  &__story {
+  h1 {
+    text-align: center;
+    color: variables.$navy;
+  }
+  &__update {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 100px;
-    // width: 80%;
-    margin: 0 auto;
-    h1 {
-      color: variables.$navy;
-      margin-bottom: 50px;
-    }
-    p {
-      margin-bottom: 30px;
-      color: variables.$navy;
-      line-height: 160%;
+    text-align: center;
+    opacity: 0.5;
+    h3 {
+      color: variables.$indigo;
       font-size: 1rem;
     }
-  }
-  &__teams {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 120px 0;
     h1 {
       color: variables.$navy;
-      margin-bottom: 80px;
-    }
-  }
-  &__team {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
-    text-align: center;
-  }
-  &__person {
-    h4 {
-      color: variables.$navy;
-      font-size: 1.5rem;
-      text-transform: none;
+      font-size: 2.3rem;
       margin-bottom: 10px;
     }
     p {
-      color: variables.$navy;
+      font-size: 0.8rem;
+    }
+    .circle {
+      background: white;
+    }
+    .vl {
+      border-left: 6px solid variables.$lavender;
+      height: 130px;
     }
   }
-  &__img {
-    background: variables.$indigo;
-    border: 10px solid variables.$lavender;
-    height: 225px;
-    width: 225px;
-    border-radius: 50%;
-    margin-bottom: 40px;
-    overflow: hidden;
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
+  &__update1 {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    h3 {
+      color: variables.$indigo;
+      font-size: 1rem;
     }
+    h1 {
+      color: variables.$navy;
+      font-size: 2.3rem;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 0.9rem;
+      line-height: 160%;
+      margin-bottom: 30px;
+    }
+
+    .vl {
+      border-left: 6px solid variables.$lavender;
+      height: 130px;
+    }
+  }
+  &__updates {
+    padding: 100px 0;
   }
 }
 
@@ -76,9 +77,10 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  .about {
-    &__story {
-      width: 100%;
+  .updates {
+    &__update1 {
+      p {
+      }
     }
     &__team {
       flex-wrap: wrap;
