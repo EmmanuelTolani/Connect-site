@@ -40,7 +40,7 @@ export default function Home() {
             </div>
             <div className="main-drive__point">
               <div className="main-drive__icon">
-                <i class="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
               </div>
               <h4>The Best of the best</h4>
               <p>
@@ -148,7 +148,7 @@ export default function Home() {
         </div>
       </div>
       <div className="wrapper">
-        <div class="push"></div>
+        <div className="push"></div>
         <Footer></Footer>
       </div>
     </>

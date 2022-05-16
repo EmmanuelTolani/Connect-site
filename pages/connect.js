@@ -66,7 +66,7 @@ export default function Home() {
         </div>
       </div>
       <div className="wrapper">
-        <div class="push"></div>
+        <div className="push"></div>
         <Footer></Footer>
       </div>
     </>

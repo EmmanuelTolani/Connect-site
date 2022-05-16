@@ -16,17 +16,17 @@ export default function Contact() {
               <h3>Please enter your information below.</h3>
               <div className="contact__names">
                 <div className="contact__name">
-                  <label for="fname">First name</label>
+                  <label htmlFor="fname">First name</label>
                   <input type="text" id="fname" name="fname" />
                 </div>
                 <div className="contact__name">
-                  <label for="lname">Last name</label>
+                  <label htmlFor="lname">Last name</label>
                   <input type="text" id="lname" name="lname" />
                 </div>
               </div>
-              <label for="email">Email</label>
+              <label htmlFor="email">Email</label>
               <input type="text" id="email" name="email" />
-              <label for="message">Message</label>
+              <label htmlFor="message">Message</label>
               <textarea name="message" rows="10" cols="30"></textarea>
               <button type="button" onclick="alert('Hello World!')">
                 Send
