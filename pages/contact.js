@@ -28,7 +28,7 @@ export default function Contact() {
               <input type="text" id="email" name="email" />
               <label htmlFor="message">Message</label>
               <textarea name="message" rows="10" cols="30"></textarea>
-              <button type="button" onclick="alert('Hello World!')">
+              <button type="button" onClick="">
                 Send
               </button>
             </div>

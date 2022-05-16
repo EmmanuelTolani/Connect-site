@@ -35,7 +35,6 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
         </Head>
         <body>
           <Main />
