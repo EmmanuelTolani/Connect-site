@@ -34,7 +34,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
             rel="stylesheet"
           />
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
         </Head>
         <body>
           <Main />
