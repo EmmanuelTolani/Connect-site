@@ -84,6 +84,9 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .hero-header1{
+    border-radius: none;
+  }
   .hero1 {
     &__title {
       width: 100%;
