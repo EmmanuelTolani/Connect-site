@@ -65,8 +65,7 @@
   // Container wrapper for all pages
   .container {
     max-width: 1366px;
-    margin: 0 auto;
-    height: auto;
+    margin: auto !important;
     width: 100%;
     padding: 0 !important;
   }
