@@ -11,8 +11,9 @@ export default function Home() {
   return (
     <div className="box">
       <Hero />
+      <div className="container">
       <div className="main-drive">
-        <div className="container">
+        
           <div className="main-drive__title">
             <h3>What Drives Us</h3>
             <h1>What We Look for in Success</h1>
@@ -54,7 +55,6 @@ export default function Home() {
               <button>Learn more about us</button>
             </Link>
           </div>
-        </div>
       </div>
       <div className="main-product">
         <div className="main-product__title">
@@ -101,12 +101,10 @@ export default function Home() {
         </div>
       </div>
       <div className="main-updates">
-        <div className="container">
           <div className="main-updates__title">
             <h3>Get Informed</h3>
             <h1>Our Updates</h1>
           </div>
-        </div>
         <div className="main-updates__container">
           <div className="main-updates__left">
             <i className="fa-solid fa-angle-left"></i>
@@ -134,7 +132,7 @@ export default function Home() {
           <Link href="/about">
             <button>Find out more</button>
           </Link>
-        </div>
+      </div>
       </div>
       <div className="main-contact">
         <div className="main-contact__title">
@@ -146,6 +144,7 @@ export default function Home() {
             <button>Contact Us</button>
           </Link>
         </div>
+      </div>
       </div>
       <div className="wrapper">
         <div className="push"></div>
