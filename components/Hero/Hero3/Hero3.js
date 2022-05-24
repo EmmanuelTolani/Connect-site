@@ -7,7 +7,7 @@ export default function Hero(props) {
     <>
       <div className="hero-header1">
         <Header1 />
-        <div className="container">
+        <div className="container1">
           <div className="hero1">
             <div className="hero1__title">
               <h1>Community</h1>

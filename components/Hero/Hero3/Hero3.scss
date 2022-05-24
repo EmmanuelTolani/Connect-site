@@ -5,9 +5,9 @@
   display: flex;
   flex-direction: column;
 }
-.container {
+.container1{
   padding: 0 50px;
-  height: 75vh;
+  height: auto;
 }
 .hero1 {
   display: flex;
@@ -97,6 +97,7 @@
       display: flex;
     }
     &__powered {
+      border-radius: none;
       h1 {
         margin-right: 20px;
       }
