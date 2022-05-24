@@ -9,7 +9,7 @@ import gsap from "gsap";
 
 export default function Home() {
   return (
-    <div>
+    <div className="box">
       <Hero />
       <div className="main-drive">
         <div className="container">
