@@ -1,5 +1,5 @@
 import Head from "next/head";
-import MainLayout from "../components/layouts/MainLayout";
+import AlternateLayout from "../components/layouts/AlternateLayout1"
 import Hero from "../components/Hero/Hero1/Hero-Header";
 import Footer from "../components/Footer/Footer";
 import Link from "next/dist/client/link";
@@ -9,8 +9,7 @@ import gsap from "gsap";
 
 export default function Home() {
   return (
-    <div className="box">
-      <Hero />
+    <AlternateLayout>
       <div className="container">
       <div className="main-drive">
         
@@ -146,10 +145,6 @@ export default function Home() {
         </div>
       </div>
       </div>
-      <div className="wrapper">
-        <div className="push"></div>
-        <Footer></Footer>
-      </div>
-    </div>
+    </AlternateLayout>
   );
 }
