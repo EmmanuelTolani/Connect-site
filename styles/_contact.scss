@@ -1,12 +1,8 @@
 @use "variables";
 .contact {
-  background: #f5f5f5;
-  padding: 150px 0;
-  margin: 0 auto;
   .container {
+    padding: 100px 0;
     height: auto;
-    margin: 0 auto;
-    padding: 0;
   }
   &__names {
     display: flex;

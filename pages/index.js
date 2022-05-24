@@ -9,7 +9,7 @@ import gsap from "gsap";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Hero />
       <div className="main-drive">
         <div className="container">
@@ -151,6 +151,6 @@ export default function Home() {
         <div className="push"></div>
         <Footer></Footer>
       </div>
-    </>
+    </div>
   );
 }
