@@ -69,6 +69,6 @@ export default function Home() {
         <div className="push"></div>
         <Footer></Footer>
       </div>
-    </>
+    </div>
   );
 }
