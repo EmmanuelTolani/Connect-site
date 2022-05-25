@@ -95,6 +95,9 @@
       }
     }
     &__img {
+      img{
+        max-height: 300px;
+      }
     }
     &__applinks {
       display: flex;
